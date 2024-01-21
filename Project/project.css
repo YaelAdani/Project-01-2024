@@ -1,0 +1,105 @@
+body {
+    background-image: url('/images/board.jpeg');
+
+    font-family: "Lucida Handwriting", "Brush Script MT", Cursive;
+  
+  }
+  
+  .page-title {
+    text-align: center;
+    
+  }
+  
+  .form-container {
+    background-image:url('/images/lines.jpeg');
+    width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+  }
+  
+  #task-input,
+  #date-input,
+  #time-input {
+    width: 85%;
+    margin-bottom: 10px;
+  }
+
+
+  #save-btn,
+  #reset-btn {
+    display: block;
+    width: 20%;
+    padding: 5px;
+    margin-top: 10px;
+    background-color: #423992;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #save-btn:hover,
+  #reset-btn:hover {
+    background-color: #060f06;
+  }
+  
+  #note-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .note {
+    position: relative;
+    background-image: url('/images/note.jpeg');
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    overflow-y: auto;
+   
+  }
+  
+  .note p {
+    margin: 0;
+  }
+  
+  .note .delete-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: none;
+    cursor: pointer;
+  }
+  .des{
+    height: 170px;
+  }
+  .note .done {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .note:hover .delete-btn {
+    display: block;
+  }
+  .note:hover .done {
+    display: block;
+  }
+  .st {
+    border: 0px;
+    background: none;
+    padding-left: 70px;
+  }
+ 
+
+  .strikethrough {
+    text-decoration: line-through;
+  }
